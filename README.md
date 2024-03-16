@@ -76,7 +76,7 @@ composer require hotzhan/think-verifycode
             $code = $param['code'];
             $token = $param['mailtoken'];
             //校验验证码和对应的邮箱
-            $res = $mail->checkMailVerifyCode($token, $code, $phoneNumber);
+            $res = $mail->checkMailVerifyCode($token, $code, $mailAddress);
             if(!$res)//验证码校验不通过
                 return $sms->getResultData();
         }
