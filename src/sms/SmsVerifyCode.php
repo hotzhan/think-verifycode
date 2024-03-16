@@ -136,7 +136,7 @@ Class SmsVerifyCode
         return $limitRes;
     }
 
-    protected function setResultData(int $code, string $msg='', array $data=[]):array
+    protected function setResultData(int $code, string $msg='', array $data=[])
     {
         $this->resultData = [
             'code' => $code,
