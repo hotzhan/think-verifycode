@@ -1,6 +1,6 @@
 ## hotzhan/think-verifycode
 - ThinkPHP验证码发送库(邮件+短信 两种方式可用)
-- 短信发送依赖 easy-sms
+- 短信发送依赖 easy-sms 
 - 邮件发送依赖 phpmailer （需安装php-imap扩展，如果是宝塔面板在对应php版本设置里可直接安装）
 
 ## ThinkPHP适用版本
@@ -14,6 +14,8 @@ composer require hotzhan/think-verifycode
 - config目录里的sms.php和mail.php文件会自动复制到thinkphp的config目录里
 - 如果没有自动复制，请自己手动复制一下
 - 具体配置参考配置文件里有详细注释
+- 短信支持多平台多网关同时配置，如果1个网关发送失败，会根据配置的依次发送直到成功为止
+- 邮件支持多服务器配置，支持qq/163等个人邮箱，可以配置多个邮箱，1个发送失败会按根据配置按顺序依次发送直到成功为止
 
 
 ## 如何使用
