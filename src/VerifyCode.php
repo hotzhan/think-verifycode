@@ -1,8 +1,11 @@
 <?php
+/**
+ *  验证码类
+ */
 
 namespace hotzhan\verifycode;
 
-use hotzhan\verify\Random;
+use hotzhan\verifycode\Random;
 use think\facade\Cache;
 
 class VerifyCode
